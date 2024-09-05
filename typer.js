@@ -115,7 +115,7 @@ function TyperSetup() {
     let owner = typers[e.dataset.owner];
     e.onclick = () => owner.start();
   }
-  for (let e of document.getElementsByClassName("cursor")) {
+  for (let e of document.getElementsByClassName("cursor-typer")) {
     let t = new Cursor(e);
     t.owner = typers[e.dataset.owner];
   }
